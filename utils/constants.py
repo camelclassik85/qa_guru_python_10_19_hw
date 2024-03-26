@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from utils.resource import path
 
+
 dotenv_path = path('.env')
 if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
@@ -33,7 +34,6 @@ test_user_registered = User(
     password=os.getenv("PASSWORD_REGISTER_USER"),
     id=int(os.getenv("ID_REGISTERED_USER")),
     token=os.getenv("TOKEN_REGISTERED_USER"))
-
 
 test_data_with_answer = {
         "id": 2,
